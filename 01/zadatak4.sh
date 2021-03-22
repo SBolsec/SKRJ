@@ -3,6 +3,7 @@
 if [ "$#" -ne 1 ]; then
   echo "Incorrect number of arguments."
   echo "Usage: ./zadatak4.sh directory"
+  exit 1
 fi
 
 dir=$1
