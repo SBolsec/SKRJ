@@ -14,6 +14,8 @@ fi
 echo "Kazalo: $1"
 echo "Uzorak: $2"
 
+IFS=$'\n'
+
 count=0
 for file in `find $1 -name "${2}"`
 do
