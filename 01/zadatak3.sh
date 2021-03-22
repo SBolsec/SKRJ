@@ -19,13 +19,15 @@ fi
 
 for file in `ls $dir | grep -iE '[0-9]{4}-02-[0-9]{2}'`
 do
-  date=`echo $i | grep -oE '[0-9]{4}-02-[0-9]{2}'`
+  date=`echo $file | grep -oE '[0-9]{4}-02-[0-9]{2}'`
   
   day=`echo $date | cut -d "-" -f 3`
   month=`echo $date | cut -d "-" -f 2`
   year=`echo $date | cut -d "-" -f 1`
+  
+  echo ""
   echo "datum: $day-$month-$year"
   echo "--------------------------------------------------"
   
-  cut $dir/$file -d '"' -f 2 | sort | uniq -c | sort -nr
+  cut $dir/$file -d '"' -f 2 | sort | uniq -c | sort -n -k 1 -r
 done
