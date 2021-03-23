@@ -14,12 +14,5 @@ fi
 echo "Kazalo: $1"
 echo "Uzorak: $2"
 
-IFS=$'\n'
-
-count=0
-for file in `find $1 -name "${2}"`
-do
-  count=$((count + `cat $file | wc -l`))
-done
-
+count=`find . -name "*.sh" -print0 | wc -l --files0-from=- | tail -n -1 | cut -d " " -f 1`
 echo "Ukupan broj redaka u kazalu $1 s imenima ciji oblik je $2 je ${count}"
