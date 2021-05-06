@@ -1,5 +1,8 @@
 #!/bin/perl
 
+# bez ovoga ispis nije dobar
+use open ':locale';
+
 if (@ARGV != 1) {
   die "Potrebno je predati ime datoteke s rezultatima.\n";
 }
