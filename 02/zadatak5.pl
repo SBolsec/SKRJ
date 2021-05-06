@@ -16,7 +16,7 @@ sub calculate_score {
   $value = 0;
 
   foreach $i (0..6) {
-    $value += @scores["$i"] * $shares["$i"];
+    $value += @scores[$i] * $shares[$i];
   }
 
   $results{$key} = $value;
