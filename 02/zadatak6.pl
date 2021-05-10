@@ -14,8 +14,8 @@ while (<>) {
   @words = split /[\s[:punct:]]+/, $_;
 
   foreach (@words) {
-    next if length() < 4;
-    $map{lc substr $_, 0, 4} += 1;   
+    next if length() < $prefix;
+    $map{lc substr $_, 0, $prefix} += 1;
   }
 }
 
