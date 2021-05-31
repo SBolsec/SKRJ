@@ -6,7 +6,7 @@ def main():
     if len(sys.argv) != 2:
         raise RuntimeError("Invalid number of arguments!")
 
-    print("Hyp#Q10#Q20#Q30#Q40#Q50#Q60#Q70$Q80$Q90")
+    print("Hyp#Q10#Q20#Q30#Q40#Q50#Q60#Q70#Q80#Q90")
 
     count = 1
     with open(sys.argv[1], "r", encoding='utf8') as file:
