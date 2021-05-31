@@ -1,0 +1,121 @@
+<html><head>
+    <title>Skriptni jezici: zadatak za izlazni test</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+
+
+<body>
+<table width="90%" align="center">
+<tbody><tr><td align="left">
+
+<h1 align="left"><font size="+2" face="Verdana, Arial, Helvetica, sans-serif">
+Skriptni jezici: zadatak za izlazni test <br>
+</font></h1>
+
+
+<p></p><hr><br><p></p>
+
+
+<h2 align="left"><font size="+0" face="Verdana, Arial, Helvetica, sans-serif">
+Napomene
+</font></h2>
+
+
+<p>
+</p><ul>
+<li>Skriptu imenovati <b><code>zadatak1.pl</code></b></li>
+<li>Argumenti: ime datoteke s arhivom mail poruka (ako datoteka nije zadana treba čitati sa standardnog ulaza)</li>
+<li>Isprobanu skriptu predati kroz <a href="https://ferko.fer.hr/ferko/">Ferko</a>.</li>
+<li>Obavezno zaključati upload!</li>
+<li>Prilikom rješavanja izlaznog testa nije dozvoljeno koristiti Internet 
+ni komunikaciju s kolegama!</li>
+<li>Pri pisanju kôda voditi računa o preglednosti.</li>
+<li>Za spremanje primjera datoteke možete koristiti desni klik, <i>Save link as...</i></li>
+
+</ul>
+<p></p>
+
+
+<h2 align="left"><font size="+0" face="Verdana, Arial, Helvetica, sans-serif">
+Zadatak
+</font></h2>
+
+<p>
+U datoteci koja se zadaje kao argument naredbenog retka (ne mora biti smještena u tekućem direktoriju)
+pohranjene su e-mail poruke razmjenjivane preko jedne distribucijske liste. Svaka poruka
+započinje praznim retkom, nakon čega dolazi redak koji započinje nizom 
+<code>"From nobody"</code>. U tom su retku zapisani i podaci o datumu i vremenu primitka elektroničke poruke. Primjer ovakve datoteke je: <code><a href="http://www.zemris.fer.hr/predmeti/skrjez/p1/2017-04.mail">2017-04.mail</a></code>.
+</p>
+
+<p>
+Napisati <code>perl</code> skriptu koja će ispisati histogram slanja
+poruka po danu u tjednu, tj. svaki redak sastoji se od troslovne oznake dana
+(Mon, Tue, Wed, ...), potom dolazi niz zvjezdica (*) čiji broj odgovara
+broju poruka poslanih na taj dan te redak završava ispisanim brojem poslanih
+poruka u zagradi.
+</p>
+
+<p>
+Primjer izvršavanja skripte <code>zadatak1.pl</code>:
+</p><xmp>
+$ ./zadatak1.pl ../TestPrimjeri/2017-04.mail 
+Mon ****************************** (30)
+Tue *********************************************************************** (71)
+Wed ************************************************************************************************** (98)
+Thu ************************************************************* (61)
+...
+</xmp>
+<p></p>
+
+
+</td></tr>
+
+
+
+</tbody></table><table width="90%" align="center">
+<tbody><tr><td align="">
+    <hr>
+    <font size="-2" face="Verdana, Arial, Helvetica, sans-serif">
+    "Skriptni jezici", FER 2020/21
+    <hr>
+</font></td></tr></tbody></table>
+
+
+<table width="90%" align="center">
+<tbody><tr valign="center">
+  <td width="75%">
+    <p align="center">
+    <font size="-2" face="Verdana, Arial, Helvetica, sans-serif">
+    Copyright(c)
+    <a href="http://www.zemris.fer.hr/">
+      Zavod za elektroniku, mikroelektroniku, računalne i inteligentne sustave
+    </a><br>
+    <a href="http://www.fer.hr/">
+      Fakultet elektrotehnike i računarstva
+    </a><br>
+    <a href="http://www.unizg.hr/">
+      Sveučilište u Zagrebu
+    </a>
+    </font>
+    </p>
+  </td>
+
+  <td width="25%">
+    <p align="right">
+    <font size="-2" face="Verdana, Arial, Helvetica, sans-serif">
+    Zoran Kalafatić<br>
+    Zadnja promjena: 11.5.2021.
+    </font>
+    </p>
+  </td>
+</tr></tbody></table>
+
+
+
+
+
+
+
+
+</body></html>
