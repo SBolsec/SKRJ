@@ -52,7 +52,7 @@ def main():
 
     print("JMBAG     \tPrezime, Ime" + " "*20 + "L1\t\tL2\t\tL3")
     for [key, value] in students.items():
-        print("{}\t{:30s}\t{}\t\t{}\t\t{}".format(key, value['last_name']+", "+value['first_name'], 
+        print("{}\t{:30s}\t{}\t\t{}\t\t{}".format(key, value['last_name']+", "+value['first_name'],
                                                   value.get('01', '-'), value.get('02', '-'), value.get('03', '-')))
 
 
